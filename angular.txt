@@ -1,0 +1,7 @@
+ng generate component -> generate component :D
+ng g component components/button
+
+https://github.com/FortAwesome/angular-fontawesome
+
+npm run server -> run db.server
+

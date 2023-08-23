@@ -1,0 +1,25 @@
+ng -g -c name
+
+Peace of user interface.
+We should have different components for side bar/headers. Home,About,Courses, Contact.
+Everytihink in htm should be separated components and we can build it in Angular.
+We can insert component in component! parent -> child realationship
+All compontns crate user interface.
+
+Every component should have ts file with @Component decorator.
+All components should be declarated in main module file!!!
+Child components SHOULD be in parent folder!!!! So all components SHOULD be in app folder?! <componentName></componentName>
+
+@Component({
+selector: 'app-className'   -> whit name in '' we can involked this component in html!
+templateUrl './className.component.html'  -> every component SHOULD has this peace of sheet. Also should be import in app.module.ts
+stylesUrls: ['./className.component.css'] -> also we can use style and add plate css but is not recommened!
+})                             
+
+@NgModule
+declarations -> there we should add our components!
+
+templateUrl - > cointains className.component.html
+
+
+

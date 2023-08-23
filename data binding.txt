@@ -1,0 +1,47 @@
+Data Binding in Angular allows us to communicate between a component class and its corresponding view templates & vice-versa.
+CAN BE Bidirectional relationship! Its mean we can get variable from class and embeded it in html. Also we can call methods!
+
+onClick(){
+this.display - true
+}
+
+<button (click) = "onClick*()"></button>
+
+if we wrap attribute in [] and assign value this value is assign direct for this attribute
+
+display = false;
+
+<div [hidden] = "display"></div> -> in this case we set direct value in hidden with this syntaxis!
+If we do not uie [] we assign string value of "display" to hidden! nice!
+
+Property Biding:
+
+<img [src] = "object.Img"></img>
+<button [disable] = "object.boolean or method etc"></button>
+
+to bind attribute [attr.aria-hidden]
+
+event biding:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+we use () for event biding not [] alse use method instread propety
+
+method(event:InputEvent/ any){
+event.target.value -> when we trigger this event from html we ca pass the value from user!!
+}
+
+<input (input) = "method($event)"></input> 
+
+
+best way for bidrectional realitionship!
+
+[(ngModel)] = "object.property" -> to use ngModel we should import FormsModule in app.module.ts and add in imports:[]
+
+@Output childEvent = new EventEmit<SomeType>(); -> this use () under the hood
+To achive this we SHOULD have child-parent relationship!!! In parent listen for child changes!
+
+@Input test:string -> this use [] under the hood, if we do not use this decorator we can not use property with []
+To achive this we SHOULD have parent-child relationship!!! In child received data from parent!
+
+
+
+
+

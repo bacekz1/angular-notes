@@ -1,0 +1,6 @@
+selector: 'name' -> now can use for html tag
+selector: '[name]' -> now can NOT use for html tag. Can use like a htm attribute -> Not prefer
+selector: '.name' -> now can use like css class -> Not prefer
+selector: '#name' -> now can use id -> Not prefer
+
+

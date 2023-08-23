@@ -1,0 +1,4 @@
+styles.ccs -> global file for css
+we can use @Import in this class to import google front
+https://fonts.google.com/
+https://fontawesome.com/

@@ -1,0 +1,27 @@
+Directives is an instructions the DOM
+which element to add/remove/change in DOM
+There are 3 types -> Component,Attribute,Structural
+
+Components are directives but with template???? ANother directives do not have a template!
+
+Attribute -> ngStyle and ngClass
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+Structural -> ngIf ngFor ngSwitch -> before use this directive we should use * !!!
+
+<div *ngFor = "Let item of [1,2,3,4,5,6]"><p>show cur number: {{item}}</p></div>
+*ngIf="condition"
+*ngIf="object.string.len != 2" *ngIf="object.age >= 18" etc...
+
+ngStyle -> we can change color dynamicly like if is avaible to be green or to be red.... bullsheets
+
+ngClass -> we can add/remove css
+
+<div {{object.property ? 'yes' : 'no'}} -> this is valid syntax>
+-----------------------------------------------------------------------------------------------------------------------------
+Instead @Component we use @Directive in our class! Also use selector
+
+@Directive({
+        selector: '[changeToGreen]'
+})

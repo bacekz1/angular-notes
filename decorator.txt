@@ -1,0 +1,2 @@
+At its core, a decorator is just a function that returns another function. Depending on where the decorator is applied (class, property, method, etc.), it gets different arguments and can manipulate or extend them.
+

@@ -1,0 +1,4 @@
+ALWAYS prefer to user templateUrl because is can catch syntax error in compile time.
+Also  involked class.component.html
+
+tmplate is pure html

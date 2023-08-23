@@ -1,0 +1,25 @@
+Angular used for single page appication.
+
+data biding add dinamicly element like
+
+title = "test title"
+
+<h2> <{{title}}> <h2>
+
+node_module -> hold 3 part library. ONly for dev purpose, Do not use in production??????????????
+
+package.json dependencies -> there are stored project dependencies!
+
+package.json devDependencies -> there are stored project dev dependencies! Do not used in production!
+
+npm install scan package.json and install dependenies. So when add mannualy new dependencies should we use npm install
+
+.editorconfig -> declarate rules which each developer should follow! Only manager should has a edit it.
+
+angular.json -> all angular setup and config related ! main, which ccs to use, scripts, etc.
+
+asset folder hold all static member like images, icons, text files etc. All in this folder is public
+
+
+
+
